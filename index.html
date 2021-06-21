@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cours HTML</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="logoHtml.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -22,5 +24,92 @@
         </p>
       </div>
     </header>
+    <section>
+      <div>
+        <h2>Photos - H2</h2>
+        <img src="technologie.jpg" alt="image de technologie" height="300" />
+      </div>
+      <div>
+        <h3>Listes - H3</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+        </ul>
+        <ol>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux Titre - H4</h4>
+        <table border="1" width="50%">
+          <caption>
+            Population Afrique
+          </caption>
+          <thead>
+            <tr>
+              <td>pays</td>
+              <td>Population</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maroc</td>
+              <td>32M</td>
+            </tr>
+            <tr>
+              <td>Egypte</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Nigeria</td>
+              <td>44M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Les liens Titre - H5</h5>
+        <a
+          href="https://htmlcheatsheet.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >HTML Cheat Sheet</a
+        >
+      </div>
+      <div>
+        <h6>Vidéo Titre - H6</h6>
+        <video src="Cat.mp4" height="250" autoplay loop muted></video>
+      </div>
+    </section>
+    <section>
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="post">
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="Entrez votre nom" />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" id="age" />
+        <br />
+        <label for="gender">Genre</label>
+        <select name="sex" id="gender">
+          <option value="Homme">Homme</option>
+          <option selected value="Femme">Femme</option>
+        </select>
+        <br />
+        <input type="radio" id="humain" name="especes" />
+        <label for="humain">Humain</label>
+        <input type="radio" id="cat" name="especes" />
+        <label for="cat">cat</label>
+        <input type="radio" id="Dog" name="especes" />
+        <label for="Dog">Dog</label>
+      </form>
+    </section>
+    <footer>
+      <a href="mailto:saidprf77@gmail.com">Ecrivez moi !</a><br />
+      <a href="uneNotice.txt" download="nom-du-fichier">Download</a>
+    </footer>
   </body>
 </html>
